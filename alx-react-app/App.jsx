@@ -1,13 +1,22 @@
-import Header from './Header';
-import MainContent from './MainContent';
-import Footer from './Footer';
+import UserProfile from '/src/UserProfile'
 
-export default function App() {
+function App() {
   return (
-    <>
-  <Header />
-  <MainContent />
-  <Footer />
-    </>
-   );
+    <div className="app">
+      <h1>User Profile</h1>
+      <UserProfile 
+        name="Kavata" 
+        age="25" 
+        bio="Loves nature and music" 
+      />
+      
+      <UserProfile 
+        name="Joy" 
+        age="30" 
+        bio="Software developer and coffee enthusiast" 
+      />
+    </div>
+  );
 }
+
+export default App;
